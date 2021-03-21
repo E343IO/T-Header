@@ -249,30 +249,7 @@ else
 echo -e "\e[1;34m[*] \e[32mdownload fail..i ll try again..\e[0m";
 
 fi
-done
-zshsyx=0
-
-cd $HOME/.plugins/
-
-while [ $zshsyx = 0 ];
-do
-echo -e "\e[1;34m[*] \e[32mZsh-syntax-highlighter setup....\e[0m";
-	( git clone https://github.com/zsh-users/zsh-syntax-highlighting.git; echo "source ~/.plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> $HOME/.zshrc; ) &> /dev/null & spin
-
-if [ -d $HOME/.plugins/zsh-syntax-highlighting ];
-then
-	zshsyx=1
-else
-	echo -e "\e[1;34m[*] \e[32mdownload fail..i ll try again..\e[0m";
-
-fi
-done
-
-
-
-
-	THEADER
-	
+don
 	
 else
 	echo -e "\e[1;34m[*] \033[32mHope you like my work..\033[0m"
